@@ -1,0 +1,54 @@
+<mujoco model="nmini">
+<!-- This file was generated from nmini.urdf -->
+  <compiler angle="radian"/>
+
+  <asset>
+    <mesh name="CHEST_JOINT_0" content_type="model/stl" file="CHEST_JOINT_0.stl"/>
+    <mesh name="LARM_JOINT0_Link" content_type="model/stl" file="LARM_JOINT0_Link.stl"/>
+    <mesh name="LARM_JOINT1_Link" content_type="model/stl" file="LARM_JOINT1_Link.stl"/>
+    <mesh name="LARM_JOINT2_Link" content_type="model/stl" file="LARM_JOINT2_Link.stl"/>
+    <mesh name="LARM_JOINT3_Link" content_type="model/stl" file="LARM_JOINT3_Link.stl"/>
+    <mesh name="LARM_JOINT4_Link" content_type="model/stl" file="LARM_JOINT4_Link.stl"/>
+    <mesh name="LARM_JOINT5_Link" content_type="model/stl" file="LARM_JOINT5_Link.stl"/>
+    <mesh name="LARM_Finger_Link" content_type="model/stl" file="LARM_Finger_Link.stl"/>
+  </asset>
+
+  <worldbody>
+    <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="CHEST_JOINT_0"/>
+    <body name="LARM_JOINT0_Link" pos="0 0.124 0.416" quat="0.991445 -0.130526 0 0">
+      <inertial pos="-2.45961e-07 0.0311418 0.0175747" quat="0.681339 0.189731 -0.188766 0.681283" mass="0.193184" diaginertia="0.000182725 0.000137031 0.000131462"/>
+      <joint name="larm_joint0" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+      <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="LARM_JOINT0_Link"/>
+      <body name="LARM_JOINT1_Link">
+        <inertial pos="-0.0134748 0.0657478 -0.0832919" quat="0.800015 0.0394418 0.0132452 0.598536" mass="0.41442" diaginertia="0.00177236 0.00174386 0.000157279"/>
+        <joint name="larm_joint1" pos="0 0 0" axis="0 1 0" range="-2.44346 1.5708" actuatorfrcrange="-100 100"/>
+        <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="LARM_JOINT1_Link"/>
+        <body name="LARM_JOINT2_Link" pos="0 0.0664 -0.2">
+          <inertial pos="0.0625667 -0.00099061 -0.0147605" quat="0.0402811 0.741138 -0.024442 0.669697" mass="0.128868" diaginertia="0.000127515 0.000109655 5.2849e-05"/>
+          <joint name="larm_joint2" pos="0 0 0" axis="0 1 0" range="-1.22173 1.5708" actuatorfrcrange="-100 100"/>
+          <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="LARM_JOINT2_Link"/>
+          <body name="LARM_JOINT3_Link" pos="0 0 -0.016" quat="0.991445 0.130526 0 0">
+            <inertial pos="0.14495 0.00157856 0" quat="0.501614 0.501614 0.49838 0.49838" mass="0.0947635" diaginertia="6.77095e-05 6.471e-05 2.53969e-05"/>
+            <joint name="larm_joint3" pos="0 0 0" axis="1 0 0" range="-1.74533 3.14159" actuatorfrcrange="-100 100"/>
+            <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="LARM_JOINT3_Link"/>
+            <body name="LARM_JOINT4_Link" pos="0.184 0 0">
+              <inertial pos="0.0487044 0 -0.00105892" quat="0 0.713315 0 0.700844" mass="0.084162" diaginertia="6.52758e-05 5.47307e-05 3.04151e-05"/>
+              <joint name="larm_joint4" pos="0 0 0" axis="0 1 0" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+              <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="LARM_JOINT4_Link"/>
+              <body name="LARM_JOINT5_Link" pos="0.072 0 0">
+                <inertial pos="0.00028129 0.0141572 -0.0498109" quat="0.980844 0.173959 -0.00961441 0.0871267" mass="0.0707892" diaginertia="5.20207e-05 4.90372e-05 2.25821e-05"/>
+                <joint name="larm_joint5" pos="0 0 0" axis="0 0 1" range="-2.96706 2.96706" actuatorfrcrange="-100 100"/>
+                <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="LARM_JOINT5_Link"/>
+                <body name="LARM_Finger_Link" pos="0 -0.02011 -0.044425">
+                  <inertial pos="-0.00107552 0.00157495 -0.0300244" quat="0.707391 0.0124358 -0.0351355 0.705839" mass="0.0258667" diaginertia="1.43039e-05 1.14049e-05 4.02061e-06"/>
+                  <joint name="larm_finger_joint" pos="0 0 0" axis="1 0 0" range="-2.96706 2.96706" actuatorfrcrange="-100 100"/>
+                  <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="LARM_Finger_Link"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

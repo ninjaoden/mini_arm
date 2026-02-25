@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+  name="nmini"
+  xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="package://nmini/urdf/joint_limit.urdf.xacro" />
+
+  <link 
+    name="base_link">
+  </link>
+
+  <joint name="base_link_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="CHEST_JOINT_0_Link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  
+  <link
+    name="CHEST_JOINT_0_Link">
+    <inertial>
+      <origin
+        xyz="-2.45960666746703E-07 0.0311418169687909 0.0175746661003382"
+        rpy="0 0 0" />
+      <mass
+        value="0.193184127927598" />
+      <inertia
+        ixx="0.000137030709467877"
+        ixy="2.10136126944992E-08"
+        ixz="4.24087422551286E-09"
+        iyy="0.000169089551209259"
+        iyz="2.26514711036514E-05"
+        izz="0.000145097720857224" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/CHEST_JOINT_0.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/CHEST_JOINT_0.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="LARM_JOINT0_Link">
+    <inertial>
+      <origin
+        xyz="-2.45960666746703E-07 0.0311418169687909 0.0175746661003382"
+        rpy="0 0 0" />
+      <mass
+        value="0.193184127927598" />
+      <inertia
+        ixx="0.000137030709467877"
+        ixy="2.10136126944992E-08"
+        ixz="4.24087422551286E-09"
+        iyy="0.000169089551209259"
+        iyz="2.26514711036514E-05"
+        izz="0.000145097720857224" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT0_Link.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT0_Link.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="LARM_JOINT1_Link">
+    <inertial>
+      <origin
+        xyz="-0.01347475 0.06574781 -0.0832919"
+        rpy="0 0 0" />
+      <mass
+        value="0.41441968" />
+      <inertia
+        ixx="0.00173871899"
+        ixy="1.286439e-5"
+        ixz="-0.00010794798"
+        iyy="0.00176650842"
+        iyz="7.542126e-5"
+        izz="0.00016826508" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT1_Link.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT1_Link.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="LARM_JOINT2_Link">
+    <inertial>
+      <origin
+        xyz="0.06256672 -0.00099061 -0.01476046"
+        rpy="0 0 0" />
+      <mass
+        value="0.12886799" />
+      <inertia
+        ixx="5.4085e-5"
+        ixy="5.23483e-6"
+        ixz="7.42337e-6"
+        iyy="0.00010917468"
+        iyz="-2.0909e-7"
+        izz="0.00012675833" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT2_Link.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT2_Link.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="LARM_JOINT3_Link">
+    <inertial>
+      <origin
+        xyz="0.14494993 0.00157856 0.0"
+        rpy="0 0 0" />
+      <mass
+        value="0.09476354" />
+      <inertia
+        ixx="2.53987e-5"
+        ixy="2.7368e-7"
+        ixz="0.0"
+        iyy="6.770768e-5"
+        iyz="0.0"
+        izz="6.471e-5" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT3_Link.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT3_Link.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="LARM_JOINT4_Link">
+    <inertial>
+      <origin
+        xyz="0.04870437 0.0 -0.00105892"
+        rpy="0 0 0" />
+      <mass
+        value="0.08416204" />
+      <inertia
+        ixx="3.04259e-5"
+        ixy="2e-11"
+        ixz="6.147e-7"
+        iyy="5.473067e-5"
+        iyz="0.0"
+        izz="6.526494e-5" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT4_Link.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT4_Link.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="LARM_JOINT5_Link">
+    <inertial>
+      <origin
+        xyz="0.00028129 0.014157179 -0.04981089"
+        rpy="0 0 0" />
+      <mass
+        value="0.07078918" />
+      <inertia
+        ixx="5.192622e-5"
+        ixy="5.9616e-7"
+        ixz="-1.4013e-7"
+        iyy="4.600984e-5"
+        iyz="8.54605e-6"
+        izz="2.570393e-5" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT5_Link.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_JOINT5_Link.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="LARM_Finger_Link">
+    <inertial>
+      <origin
+        xyz="-0.00107552 0.00157495 -0.03002444"
+        rpy="0 0 0" />
+      <mass
+        value="0.02586674" />
+      <inertia
+        ixx="1.139727E-5"
+        ixy="-1.273E-8"
+        ixz="2.3699E-7"
+        iyy="1.425746E-5"
+        iyz="6.8936E-7"
+        izz="4.0747E-6" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_Finger_Link.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nmini/models//meshes/LARM_Finger_Link.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="larm_joint0" type="revolute">
+    <parent link="CHEST_JOINT_0_Link"/>
+    <child link="LARM_JOINT0_Link"/>
+    <origin xyz="0.0 0.124 0.416" rpy="-0.26179938779914941 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1.57079632679" upper="1.57079632679" effort="100" velocity="4.18879020479"/>
+  </joint>
+
+  <joint name="larm_joint1" type="revolute">
+    <parent link="LARM_JOINT0_Link"/>
+    <child link="LARM_JOINT1_Link"/>
+    <origin xyz="0 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2.44346095279" upper="1.57079632679" effort="100" velocity="3.14159265359"/>
+  </joint>
+
+  <joint name="larm_joint2" type="revolute">
+    <parent link="LARM_JOINT1_Link"/>
+    <child link="LARM_JOINT2_Link"/>
+    <origin xyz="0.0 0.0664 -0.2" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.2217304764" upper="1.57079632679" effort="100" velocity="4.01425727959"/>
+  </joint>
+
+  <joint name="larm_joint3" type="revolute">
+    <parent link="LARM_JOINT2_Link"/>
+    <child link="LARM_JOINT3_Link"/>
+    <origin xyz="0.0 0.0 -0.016" rpy="0.26179938779914941 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.74532925199" upper="3.14159265359" effort="100" velocity="6.63225115758"/>
+  </joint>
+
+  <joint name="larm_joint4" type="revolute">
+    <parent link="LARM_JOINT3_Link"/>
+    <child link="LARM_JOINT4_Link"/>
+    <origin xyz="0.184 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57079632679" upper="1.57079632679" effort="100" velocity="6.63225115758"/>
+  </joint>
+
+  <joint name="larm_joint5" type="revolute">
+    <parent link="LARM_JOINT4_Link"/>
+    <child link="LARM_JOINT5_Link"/>
+    <origin xyz="0.072 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-2.96705972839" upper="2.96705972839" effort="100" velocity="11.1701072128"/>
+  </joint>
+
+  <joint name="larm_finger_joint" type="revolute">
+    <parent link="LARM_JOINT5_Link"/>
+    <child link="LARM_Finger_Link"/>
+    <origin xyz="0.0 -0.02011 -0.044425" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.7453291995659765" upper="0.17453297762778586" effort="100" velocity="11.1701072128"/>
+  </joint>
+
+</robot>
